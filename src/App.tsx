@@ -399,10 +399,14 @@ export default function App() {
         className="relative min-h-screen flex items-center overflow-hidden"
       >
         {/* Background image */}
-        <div className="absolute inset-0">
-          <img src="/images/image-1582740883437605.jpg" alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/55" />
-        </div>
+{/* Background image */}
+<div className="absolute inset-0">
+  {/* Mobile */}
+  <img src="/images/gallery/image-1357101149098386.jpg" alt="" className="w-full h-full object-cover md:hidden" />
+  {/* Desktop */}
+  <img src="/images/image-1582740883437605.jpg" alt="" className="w-full h-full object-cover hidden md:block" />
+  <div className="absolute inset-0 bg-black/55" />
+</div>
 
 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-20 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
